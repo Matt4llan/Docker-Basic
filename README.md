@@ -41,22 +41,22 @@ Setting a root password and clicking create.
 ![image](https://github.com/Matt4llan/Docker-Basic/assets/156334555/0fec12ea-e300-4746-8089-91107ca7e1d4)
 
 ## Step 3 - installing Docker
-...
+```
 snap install docker
-...
+```
 
 ![image](https://github.com/Matt4llan/Docker-Basic/assets/156334555/e7349685-9bca-49c1-8276-88f5f3615566)
 
 ## Step 4 - Crating a Centos Docker container
 
 Next im going to use the following commands to Install CENTOS into a docker container
-...
+```
 docker pull centos
 docker run -d -t --name dockercentos centos
 docker ps
 docker exec -it dockercentos bash
 exit
-...
+```
 
 - docker pull centos | This command downloads the CentOS image from Docker Hub to your local machine, making it available for use in creating containers.
 - docker run -d -t --name dockercentos centos | This command creates a new container using the CentOS image. The container is named "dockercentos" and runs in the background.
@@ -75,13 +75,13 @@ exit
 ## Step 5 - Crating a Alpine Docker container
 
 Next im going to use the following commands to Install Alpine into a docker container
-...
+```
 docker pull alpine
 docker run -d -t --name dockeralpine alpine
 docker ps
 docker exec -it dockeralpine sh
 exit
-...
+```
 
 ![image](https://github.com/Matt4llan/Docker-Basic/assets/156334555/957e5907-38a9-4ed3-8ef8-2226f2740a46)
 
